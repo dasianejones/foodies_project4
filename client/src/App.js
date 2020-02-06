@@ -18,6 +18,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/login" component={Login} />
           <Route exact path="/restaurants" component={Restaurants} />
           <Route
             exact
@@ -28,7 +29,6 @@ function App() {
           <Route exact path="/reviews/:reviewsId" component={SingleReview} />
           <Route exact path="/comments" component={Comments} />
           <Route exact path="/comments/:commentsId" component={SingleComment} />
-          <Route exact path="/login" component={Login} />
         </Switch>
       </Router>
     </div>
