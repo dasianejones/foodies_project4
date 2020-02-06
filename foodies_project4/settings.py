@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'foodies_project4.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'foodies'),
+        'NAME': 'foodies',
         'PASSWORD': 'foodies',
         'HOST': 'localhost'
     }
