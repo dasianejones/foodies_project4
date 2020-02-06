@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+.navbar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.jumbotron {
+  background-image: url(https://i.pinimg.com/originals/30/7e/81/307e8154e87ffc5d2f823cd50b174dee.gif);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-bottom-tabs {
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-bottom-search-tabs {
+  position: center;
+  padding-top: 15px;
+  padding-left: 340px;
+}
+
+.home-card-group {
+  display: inline-block;
+  margin: center;
+  margin-top: 25px;
+  position: center;
+  margin-left: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-search-bar-container {
+  background-color: white;
+}
+
+.horizontal-card-container {
+  width: 100%;
+  height: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.foodies-card {
+  padding: 0;
+  height: 330px;
+  width: 320px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin: 4px 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.foodies-card img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.foodies-card .content {
+  padding: 12px;
 }
