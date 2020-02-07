@@ -125,3 +125,11 @@
   flex-direction: center;
   align-items: center;
 }
+
+.input-list-box {
+  /* display: flex;
+  justify-content: center; */
+  height: 780px;
+  width: 760px;
+  align-items: center;
+}
