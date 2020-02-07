@@ -125,7 +125,7 @@ export default class Home extends Component {
                     fontSize: "14px"
                   }}
                 >
-                  Chat
+                  Restaurants
                 </Nav.Link>
                 <Nav.Link
                   eventKey={2}
@@ -137,7 +137,7 @@ export default class Home extends Component {
                     fontSize: "14px"
                   }}
                 >
-                  Write A Review
+                  Reviews
                 </Nav.Link>
                 <Nav.Link
                   href="#deets"
@@ -147,7 +147,7 @@ export default class Home extends Component {
                     fontSize: "14px"
                   }}
                 >
-                  Events
+                  Top Rated
                 </Nav.Link>
                 <Nav.Link
                   eventKey={2}
@@ -159,7 +159,7 @@ export default class Home extends Component {
                     fontSize: "14px"
                   }}
                 >
-                  Write A Review
+                  Home Delivery
                 </Nav.Link>
               </Nav>
             </Container>
@@ -203,7 +203,6 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-
         <div
           style={{
             textAlign: "center",
@@ -260,6 +259,179 @@ export default class Home extends Component {
             paddingTop: "10px"
           }}
         ></div>
+        <div
+          style={{
+            textAlign: "center",
+            fontSize: "22px",
+            fontWeight: "bold",
+            paddingTop: "30px",
+            color: "#1E90FF"
+          }}
+        >
+          Hot New Businesses
+        </div>
+        <div
+          style={{
+            textAlign: "center",
+            fontSize: "28px",
+            fontWeight: "bold",
+            paddingTop: "30px"
+          }}
+        ></div>
+        <div className="horizontal-card-container">
+          <div className="foodies-card">
+            <img src="http://placekitten.com/300/200" alt="n/a" />
+            <div className="content">
+              <div className="title"></div>
+              <div className="text" /> Some quick example text to build on the
+              card title and make up the bulk of the card's content.
+            </div>
+          </div>
+
+          <div className="foodies-card">
+            <img src="http://placekitten.com/300/200" alt="n/a" />
+            <div className="content">
+              <div className="title"></div>
+              <div className="text" /> Some quick example text to build on the
+              card title and make up the bulk of the card's content.
+            </div>
+          </div>
+
+          <div className="foodies-card">
+            <img src="http://placekitten.com/300/200" alt="n/a" />
+            <div className="content">
+              <div className="title"></div>
+              <div className="text" /> Some quick example text to build on the
+              card title and make up the bulk of the card's content.
+            </div>
+          </div>
+          <div
+            className="empty-div-2"
+            style={{
+              textAlign: "center",
+              fontSize: "26px",
+              fontWeight: "bold",
+              paddingTop: "30px"
+            }}
+          ></div>
+        </div>
+        <div
+          style={{
+            textAlign: "center",
+            fontSize: "22px",
+            fontWeight: "bold",
+            paddingTop: "30px",
+            paddingBottom: "15px",
+            color: "#1E90FF"
+          }}
+        >
+          Browse Food By Category
+        </div>
+        <div className="flex-container-container">
+          <div className="flex-container">
+            <div className="foodies-card-2">
+              {/* <img
+                src="https://image.freepik.com/free-vector/delicious-mexican-food-cartoon_24640-29381.jpg/20/10"
+                alt="n/a"
+              /> */}
+              <div className="content">
+                <div className="title"></div>
+                <div className="text" />
+                Mexican
+              </div>
+            </div>{" "}
+            <div className="foodies-card-2">
+              {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
+              <div className="content">
+                <div className="title"></div>
+                <div className="text" /> Italian
+              </div>
+            </div>{" "}
+            <div className="foodies-card-2">
+              {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
+              <div className="content">
+                <div className="title"></div>
+                <div className="text" /> Indian
+              </div>
+            </div>{" "}
+            <div className="foodies-card-2">
+              {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
+              <div className="content">
+                <div className="title"></div>
+                <div className="text" /> Cajun
+              </div>
+            </div>{" "}
+          </div>
+          <div className="flex-container-2">
+            <div className="foodies-card-2">
+              {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
+              <div className="content">
+                <div className="title"></div>
+                <div className="text" /> Soul
+              </div>
+            </div>{" "}
+            <div className="foodies-card-2">
+              {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
+              <div className="content">
+                <div className="title"></div>
+                <div className="text" /> Thai
+              </div>
+            </div>{" "}
+            <div className="foodies-card-2">
+              {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
+              <div className="content">
+                <div className="title"></div>
+                <div className="text" /> Greek
+              </div>
+            </div>{" "}
+            <div className="foodies-card-2">
+              {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
+              <div className="content">
+                <div className="title"></div>
+                <div className="text" /> More Categories
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#" style={{ color: "#1E90FF" }}>
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style={{ color: "#1E90FF" }}>
+                  Discover
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style={{ color: "#1E90FF" }}>
+                  Foodies for Business Owners
+                </a>
+              </li>
+            </ul>
+            <span class="navbar-text" style={{ color: "#1E90FF" }}>
+              Languages
+            </span>
+            <div style={{ paddingLeft: "15px" }}></div>
+            <span class="navbar-text" style={{ color: "#1E90FF" }}>
+              Country
+            </span>
+          </div>
+        </nav>
       </div>
     );
   }
