@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default class Comments extends Component {
   state = {
@@ -15,13 +17,13 @@ export default class Comments extends Component {
   };
 
   componentDidMount() {
-    this.updateReviewsList();
+    this.updateCommentsList();
   }
 
-  updateReviewsList = () => {
-    axios.get("/api/v1/review/").then(res => {
-      this.setState({ reviews: res.data });
-      console.log(this.state.reviews);
+  updateCommentsList = () => {
+    axios.get("/api/v1/comment/").then(res => {
+      this.setState({ comments: res.data });
+      console.log(this.state.comments);
     });
   };
 
@@ -30,27 +32,26 @@ export default class Comments extends Component {
     const name = event.target.name;
 
     const newState = { ...this.state };
-    newState.newReviews[name] = value;
+    newState.newComments[name] = value;
     this.setState(newState);
   };
 
   onSubmit = event => {
     event.preventDefault();
 
-    axios.post("/api/v1/review/", this.state.newReviews).then(() => {
+    axios.post("/api/v1/comment/", this.state.newComments).then(() => {
       const newState = { ...this.state };
-      newState.newReviews = {
-        reviewer_name: "",
-        restaurant_name: "",
-        dish_rating: "",
-        favorite_dish: "",
-        customer_service_rating: "",
-        dish_picture: "",
-        restaurant: ""
+      newState.newComments = {
+        commenter_name: "",
+        commenter_picture: "",
+        comment_heading: "",
+        commenter_location: "",
+        content: "",
+        review: ""
       };
       this.setState(newState);
       // update page data
-      this.updateReviewsList();
+      this.updateCommentsList();
     });
   };
   render() {
