@@ -4,13 +4,13 @@ export default class Reviews extends Component {
   state = {
     reviews: [],
     newReviews: {
-      re_name: "",
-      restaurant_rating: "",
-      restaurant_phone_number: "",
-      restaurant_address: "",
-      type_of_food: "",
-      multiple_restaurant_locations: "",
-      need_directions: ""
+      reviewer_name: "",
+      restaurant_name: "",
+      dish_rating: "",
+      favorite_dish: "",
+      customer_service_rating: "",
+      dish_picture: "",
+      restaurant: ""
     },
     redirect: false
   };
