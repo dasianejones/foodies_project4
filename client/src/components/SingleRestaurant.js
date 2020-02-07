@@ -37,6 +37,7 @@ export default class SingleRestaurant extends Component {
     event.preventDefault();
     const url = `/api/v1/restaurant/${this.props.match.params.restaurantsId}/`;
     axios.put(url, this.state.restaurant);
+    this.setState({ redirect: true });
   };
 
   deleteSingleRestaurant = () => {
@@ -57,6 +58,7 @@ export default class SingleRestaurant extends Component {
   render() {
     return (
       <div>
+        <h1>hy</h1>
         {this.state.redirect === true ? <Redirect to="/restaurants" /> : null}
         <h1 style={{ paddingTop: "30px" }}>Change Restaurant Information</h1>
 
@@ -131,7 +133,7 @@ export default class SingleRestaurant extends Component {
         </div>
 
         <div style={{ paddingTop: "10px" }} className="form-container">
-          <button onClick={this.updateSingleRestaurant}>Update</button>
+          <button onClick={this.onSubmit}>Update</button>
 
           <button onClick={this.deleteSingleRestaurant}>Delete</button>
         </div>

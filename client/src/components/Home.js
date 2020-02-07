@@ -68,7 +68,7 @@ export default class Home extends Component {
                 </Nav.Link>
                 <Nav.Link
                   eventKey={2}
-                  href="#memes"
+                  href="/reviews"
                   style={{
                     color: "#1E90FF",
                     fontWeight: "bolder",
@@ -118,7 +118,7 @@ export default class Home extends Component {
               </Form>
               <Nav className="home-bottom-search-tabs">
                 <Nav.Link
-                  href="#deets"
+                  href="/restaurants"
                   style={{
                     color: "#1E90FF",
                     fontWeight: "bolder",
@@ -129,7 +129,7 @@ export default class Home extends Component {
                 </Nav.Link>
                 <Nav.Link
                   eventKey={2}
-                  href="#memes"
+                  href="/reviews"
                   style={{
                     display: "inline-block",
                     color: "#1E90FF",

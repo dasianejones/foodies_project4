@@ -25,6 +25,7 @@ export default class Restaurants extends Component {
 
   updateRestaurantsList = () => {
     axios.get("/api/v1/restaurant/").then(res => {
+      console.log("hey its me", res.data);
       this.setState({ restaurants: res.data });
       console.log(this.state.restaurants);
     });
@@ -150,6 +151,7 @@ export default class Restaurants extends Component {
         </form>
 
         {this.state.restaurants.map(restaurants => {
+          console.log(restaurants.id);
           return (
             <div>
               <h1>Hi Restaurants! Im New Here!</h1>
@@ -162,7 +164,7 @@ export default class Restaurants extends Component {
                   }}
                 >
                   <Card.Body>
-                    <Link to={`/api/v1/restaurant/${restaurants.id}`}>
+                    <Link to={`/restaurants/${restaurants.id}`}>
                       <Card.Title style={{ paddingTop: "10px" }}>
                         Restaurant Name {restaurants.restaurant_name}
                       </Card.Title>
