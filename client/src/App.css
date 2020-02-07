@@ -133,3 +133,9 @@
   width: 760px;
   align-items: center;
 }
+
+.input-group {
+  display: flex;
+  align-items: flex-start;
+  background-color: lightgrey;
+}

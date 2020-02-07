@@ -13,8 +13,8 @@ export default class Restaurants extends Component {
       restaurant_phone_number: "",
       restaurant_address: "",
       type_of_food: "",
-      multiple_restaurant_locations: "",
-      need_directions: ""
+      multiple_restaurant_locations: false,
+      need_directions: false
     },
     redirect: false
   };
@@ -31,7 +31,8 @@ export default class Restaurants extends Component {
   };
 
   onChange = event => {
-    const value = event.target.value;
+    const target = event.target;
+    const value = target.type === "checkbox" ? target.checked : target.value;
     const name = event.target.name;
 
     const newState = { ...this.state };
@@ -50,8 +51,8 @@ export default class Restaurants extends Component {
         restaurant_phone_number: "",
         restaurant_address: "",
         type_of_food: "",
-        multiple_restaurant_locations: "",
-        need_directions: ""
+        multiple_restaurant_locations: false,
+        need_directions: false
       };
       this.setState(newState);
       // update page data
@@ -68,7 +69,7 @@ export default class Restaurants extends Component {
             <input
               className="form-control"
               type="text"
-              name="picture"
+              name="restaurant_name"
               onChange={this.onChange}
               value={this.state.newRestaurants.restaurant_name}
               placeholder="Restaurant Name"
@@ -77,7 +78,7 @@ export default class Restaurants extends Component {
             <input
               className="form-control"
               type="text"
-              name="picture"
+              name="restaurant_phone_number"
               onChange={this.onChange}
               value={this.state.newRestaurants.restaurant_phone_number}
               placeholder="Restaurant Phone Number"
@@ -86,7 +87,7 @@ export default class Restaurants extends Component {
             <input
               className="form-control"
               type="text"
-              name="picture"
+              name="restaurant_address"
               onChange={this.onChange}
               value={this.state.newRestaurants.restaurant_address}
               placeholder="Restaurant Address"
@@ -95,29 +96,50 @@ export default class Restaurants extends Component {
             <input
               className="form-control"
               type="text"
-              name="picture"
+              name="restaurant_rating"
+              onChange={this.onChange}
+              value={this.state.newRestaurants.restaurant_rating}
+              placeholder="Restaurant Rating"
+            />
+
+            <input
+              className="form-control"
+              type="text"
+              name="type_of_food"
               onChange={this.onChange}
               value={this.state.newRestaurants.type_of_food}
               placeholder="Restaurant Food Category"
             />
+            <div className="input-group">
+              <label
+                htmlFor="multiple_restaurant_locations"
+                style={{ marginTop: "5px" }}
+              >
+                "More Than One Restaurant Location?"
+              </label>
+              <input
+                className="form-control"
+                type="checkbox"
+                name="multiple_restaurant_locations"
+                onChange={this.onChange}
+                value={this.state.newRestaurants.multiple_restaurant_locations}
+                placeholder="More Than One Restaurant Location?"
+              />
+            </div>
 
-            <input
-              className="form-control"
-              type="text"
-              name="picture"
-              onChange={this.onChange}
-              value={this.state.newRestaurants.multiple_restaurant_locations}
-              placeholder="More Than One Restaurant Location?"
-            />
-
-            <input
-              className="form-control"
-              type="text"
-              name="picture"
-              onChange={this.onChange}
-              value={this.state.newRestaurants.need_directions}
-              placeholder="Do You Need Directions To This Restaurant?"
-            />
+            <div className="input-group">
+              <label htmlFor="need_directions" style={{ marginTop: "5px" }}>
+                "Do You Need Directions To This Restaurant?"
+              </label>
+              <input
+                className="form-control"
+                type="checkbox"
+                name="need_directions"
+                onChange={this.onChange}
+                value={this.state.newRestaurants.need_directions}
+                placeholder="Do You Need Directions To This Restaurant?"
+              />
+            </div>
 
             <input
               class="btn btn-secondary"
@@ -140,7 +162,7 @@ export default class Restaurants extends Component {
                   }}
                 >
                   <Card.Body>
-                    <Link to={`/api/v1/restaurant/${restaurants._id}`}>
+                    <Link to={`/api/v1/restaurant/${restaurants.id}`}>
                       <Card.Title style={{ paddingTop: "10px" }}>
                         Restaurant Name {restaurants.restaurant_name}
                       </Card.Title>
