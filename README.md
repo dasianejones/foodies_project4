@@ -6,9 +6,9 @@ General Assembly SEI February 10 - Project 4
 
 [Heroku]()
 
-[Trello Board]()
+[Trello Board](https://trello.com/b/xbqAN8vo/project-4)
 
-[GitHub]()
+[GitHub](https://github.com/dasianejones/foodies_project4)
 
 OVERVIEW
 

@@ -419,7 +419,7 @@ export default class Home extends Component {
               {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
               <div className="content">
                 <div className="title"></div>
-                <div className="text" /> Greek
+                <div className="text"> Greek</div>
               </div>
             </div>{" "}
             <div className="foodies-card-2">

@@ -71,6 +71,7 @@
   border-radius: 4px;
   background: #fff;
   display: flex;
+  text-align: center;
   justify-content: flex-start;
   flex-direction: center;
   align-items: center;
@@ -81,6 +82,9 @@
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
+.foodies-card-2 .text {
+  text-align: center;
+}
 .flex-container {
   display: flex;
   background: #f5f5f5;
