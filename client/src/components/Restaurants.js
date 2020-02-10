@@ -105,6 +105,7 @@ export default class Restaurants extends Component {
             <Button
               variant="outline-primary"
               style={{ color: "#1E90FF", marginLeft: "630px" }}
+              href="/login"
             >
               Login
             </Button>
