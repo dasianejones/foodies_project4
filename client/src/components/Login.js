@@ -59,6 +59,7 @@ export default class Login extends Component {
             </Form>
           </Card>
         </div>
+        <div className="size-container" style={{ height: "30px" }}></div>
         <div>
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button

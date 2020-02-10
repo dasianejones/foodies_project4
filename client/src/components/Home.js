@@ -79,6 +79,7 @@ export default class Home extends Component {
                 </Nav.Link>
                 <ButtonToolbar>
                   <Button
+                    href="/login"
                     variant="outline-primary"
                     style={{ color: "#1E90FF", marginLeft: "630px" }}
                   >
