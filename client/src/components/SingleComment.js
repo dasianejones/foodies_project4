@@ -157,7 +157,7 @@ export default class SingleComment extends Component {
               type="text"
               name="restaurant"
               onChange={this.onChange}
-              value={this.state.review.restaurant}
+              value={this.state.comment.restaurant}
               //   placeholder="Need Directions?"
             />
             <div style={{ marginTop: "10px" }} className="form-container">
