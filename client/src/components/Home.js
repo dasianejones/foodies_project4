@@ -170,7 +170,7 @@ export default class Home extends Component {
             textAlign: "center",
             fontSize: "28px",
             fontWeight: "bold",
-            paddingTop: "30px"
+            marginTop: "30px"
           }}
         >
           Find The Best Restaurants In Town
