@@ -183,7 +183,7 @@ export default class SingleRestaurant extends Component {
           </div>
         </form>
 
-        <div></div>
+        <div className="size-container" style={{ height: "200px" }}></div>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <button
