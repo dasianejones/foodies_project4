@@ -140,14 +140,14 @@ export default class Home extends Component {
                   Reviews
                 </Nav.Link>
                 <Nav.Link
-                  href="#deets"
+                  href="/comments"
                   style={{
                     color: "#1E90FF",
                     fontWeight: "bolder",
                     fontSize: "14px"
                   }}
                 >
-                  Top Rated
+                  Comments
                 </Nav.Link>
                 <Nav.Link
                   eventKey={2}

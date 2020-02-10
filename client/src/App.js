@@ -12,6 +12,7 @@ import Login from "./components/Login";
 
 import "./App.css";
 import "./index.css";
+import GoogleMaps from "./components/GoogleMaps.js";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route exact path="/reviews/:reviewsId" component={SingleReview} />
           <Route exact path="/comments" component={Comments} />
           <Route exact path="/comments/:commentsId" component={SingleComment} />
+          <Route exact path="/location" component={GoogleMaps} />
         </Switch>
       </Router>
     </div>

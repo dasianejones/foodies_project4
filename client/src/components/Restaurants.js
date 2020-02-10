@@ -3,6 +3,12 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Button from "react-bootstrap/Button";
+
+import { MapContainer } from "../components/GoogleMaps";
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 
 export default class Restaurants extends Component {
   state = {
@@ -41,6 +47,11 @@ export default class Restaurants extends Component {
     this.setState(newState);
   };
 
+  //   GoogleApiWrapper = () =>
+  //     ({
+  //       apiKey: "AIzaSyD34hlDHSkuuHmIAqO4H5WQhYuNH7ygMEE"
+  //     }(MapContainer));
+
   onSubmit = event => {
     event.preventDefault();
 
@@ -63,8 +74,48 @@ export default class Restaurants extends Component {
   render() {
     return (
       <div>
-        <div>Hi Restaurants! Im New Here!</div>
-
+        <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
+          <Navbar.Brand href="#home"></Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link href="/" style={{ color: "white" }}>
+                Let Your Tummies Roar!
+              </Nav.Link>
+            </Nav>
+            <Nav>
+              <Nav.Link href="#deets" style={{ color: "white" }}>
+                Seafood
+              </Nav.Link>
+              <Nav.Link href="#deets" style={{ color: "white" }}>
+                Mexican
+              </Nav.Link>
+              <Nav.Link eventKey={2} href="#memes" style={{ color: "white" }}>
+                All American
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+        <Navbar style={{ height: "180px" }}>
+          <Navbar.Brand href="#home">
+            <h3>Add Your First Restaurant Today!</h3>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Collapse className="justify-content-end">
+            <Button
+              variant="outline-primary"
+              style={{ color: "#1E90FF", marginLeft: "630px" }}
+            >
+              Login
+            </Button>
+            <Button variant="outline-primary" style={{ color: "#1E90FF" }}>
+              Signup
+            </Button>
+          </Navbar.Collapse>
+        </Navbar>
+        <h2 style={{ marginTop: "35px", marginBottom: "25px" }}>
+          Want To Add A New Restaurant?
+        </h2>
         <form onSubmit={this.onSubmit}>
           <div className="input-list-box">
             <input
@@ -143,20 +194,21 @@ export default class Restaurants extends Component {
             </div>
 
             <input
+              style={{ marginTop: "10px" }}
               class="btn btn-secondary"
               type="submit"
               value="Add Restaurant"
             />
           </div>
+          <div className="location-container"></div>
         </form>
-
+        <h1>All Restaurants</h1>;
         {this.state.restaurants.map(restaurants => {
           console.log(restaurants.id);
+
           return (
             <div>
-              <h1>Hi Restaurants! Im New Here!</h1>
-
-              <div className="form" style={{ paddingTop: "25px" }}>
+              <div className="form">
                 <Card
                   style={{
                     width: "50%",
@@ -166,27 +218,27 @@ export default class Restaurants extends Component {
                   <Card.Body>
                     <Link to={`/restaurants/${restaurants.id}`}>
                       <Card.Title style={{ paddingTop: "10px" }}>
-                        Restaurant Name {restaurants.restaurant_name}
+                        {restaurants.restaurant_name}
                       </Card.Title>
                     </Link>
                     <Card.Subtitle className="mb-2 text-muted">
-                      Restaurant Rating {restaurants.restaurant_rating}
+                      Restaurant Rating: {restaurants.restaurant_rating}
                     </Card.Subtitle>
                     <Card.Subtitle className="mb-2 text-muted">
-                      Phone Number {restaurants.restaurant_phone_number}
+                      Phone Number: {restaurants.restaurant_phone_number}
                     </Card.Subtitle>
                     <Card.Subtitle className="mb-2 text-muted">
-                      Address {restaurants.restaurant_address}
+                      Address: {restaurants.restaurant_address}
                     </Card.Subtitle>
                     <Card.Subtitle className="mb-2 text-muted">
-                      Food Category {restaurants.type_of_food}
+                      Food Category: {restaurants.type_of_food}
                     </Card.Subtitle>
-                    <Card.Subtitle className="mb-2 text-muted">
+                    {/* <Card.Subtitle className="mb-2 text-muted">
                       Multiple Restaurant Locations?{" "}
                       {restaurants.multiple_restaurant_locations}
-                    </Card.Subtitle>
+                    </Card.Subtitle> */}
                     <Card.Text>{restaurants.need_directions}</Card.Text>
-                    <Card.Link style={{ color: "black" }} href="#">
+                    <Card.Link style={{ color: "black" }} href="/location">
                       Need Directions?
                     </Card.Link>
                   </Card.Body>
@@ -195,6 +247,45 @@ export default class Restaurants extends Component {
             </div>
           );
         })}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#" style={{ color: "#1E90FF" }}>
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style={{ color: "#1E90FF" }}>
+                  Discover
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style={{ color: "#1E90FF" }}>
+                  Foodies for Business Owners
+                </a>
+              </li>
+            </ul>
+            <span class="navbar-text" style={{ color: "#1E90FF" }}>
+              Languages
+            </span>
+            <div style={{ paddingLeft: "15px" }}></div>
+            <span class="navbar-text" style={{ color: "#1E90FF" }}>
+              Country
+            </span>
+          </div>
+        </nav>
       </div>
     );
   }
