@@ -177,29 +177,43 @@ export default class Home extends Component {
         </div>
         <div className="horizontal-card-container">
           <div className="foodies-card">
-            <img src="http://placekitten.com/300/200" alt="n/a" />
+            <img
+              src="https://s3-media0.fl.yelpcdn.com/bphoto/XLwKBKQNJs2i_UeDViY7Rw/l.jpg/300/200"
+              alt="n/a"
+            />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> Some quick example text to build on the
-              card title and make up the bulk of the card's content.
+              <div className="text" /> "Atlanta Breakfast Club provides it's
+              guest with more than just Great Food and Great Service, but with a
+              Great Experience. Our Breakfast and Lunch menu has been apart of
+              an eating experience shared by guest all over the World."
             </div>
           </div>
 
           <div className="foodies-card">
-            <img src="http://placekitten.com/300/200" alt="n/a" />
+            <img
+              src="https://cdn.vox-cdn.com/thumbor/4h1BzezmiL4O2zZMM1kiLiAKmbI=/0x0:1207x901/1200x800/filters:focal(508x355:700x547)/cdn.vox-cdn.com/uploads/chorus_image/image/59544055/The_King_Kong_Sundae_Sugar_Factory_Atlanta_1.0.jpg/300/200"
+              alt="n/a"
+            />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> Some quick example text to build on the
-              card title and make up the bulk of the card's content.
+              <div className="text" /> "Sugar Factory is all about celebrating
+              the sweetest moments in life. We want to create a fun,
+              unforgettable dining experience for any age, at every location"
             </div>
           </div>
 
           <div className="foodies-card">
-            <img src="http://placekitten.com/300/200" alt="n/a" />
+            <img
+              src="https://s3-media0.fl.yelpcdn.com/bphoto/GYXFw8ABUrjejHArcpQbyQ/l.jpg/300/200"
+              alt="n/a"
+            />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> Some quick example text to build on the
-              card title and make up the bulk of the card's content.
+              <div className="text" /> "Mary Mac's specializes in one
+              thing.....True Southern Hospitality. From the outstanding service
+              to the wonderful southern cuisine, this is the place to dine in
+              Atlanta."
             </div>
           </div>
         </div>
@@ -280,29 +294,45 @@ export default class Home extends Component {
         ></div>
         <div className="horizontal-card-container">
           <div className="foodies-card">
-            <img src="http://placekitten.com/300/200" alt="n/a" />
+            <img
+              src="https://s3-media0.fl.yelpcdn.com/bphoto/UHZYa4OoHLvuqWHdmz_3ZA/l.jpg300/200"
+              alt="n/a"
+            />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> Some quick example text to build on the
-              card title and make up the bulk of the card's content.
+              <div className="text" /> " Carrying with it the two award winning
+              pork and lobster ramen, E ramen expand its horizon and created
+              other a full menu of other ramen bowls in the hopes of making this
+              very classical comfort food accessible in the heart of midtown
+              Atlanta. "
             </div>
           </div>
 
           <div className="foodies-card">
-            <img src="http://placekitten.com/300/200" alt="n/a" />
+            <img
+              src="https://s3-media0.fl.yelpcdn.com/bphoto/CzVNUGkJQmH7wgRSejsdcQ/l.jpg/300/200"
+              alt="n/a"
+            />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> Some quick example text to build on the
-              card title and make up the bulk of the card's content.
+              <div className="text" /> "Ford Fry’s The Optimist brings a seaside
+              fish camp experience to landlocked Atlantans. From fresh oysters
+              from the Alabama coast and Maine sea scallops to whole roasted
+              Georgia trout, guests enjoy high-quality, sustainable seafood from
+              the country’s best suppliers."
             </div>
           </div>
 
           <div className="foodies-card">
-            <img src="http://placekitten.com/300/200" alt="n/a" />
+            <img
+              src="https://s3-media0.fl.yelpcdn.com/bphoto/sFwVhj6lXUjdctf9JMBX7Q/l.jpg/300/200"
+              alt="n/a"
+            />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> Some quick example text to build on the
-              card title and make up the bulk of the card's content.
+              <div className="text" /> "Slutty food is overindulgent, gooey,
+              messy, most often sweet, and irresistible. You shouldn't want it,
+              but you do. However, we're plant based...guilt free."
             </div>
           </div>
           <div
@@ -330,10 +360,10 @@ export default class Home extends Component {
         <div className="flex-container-container">
           <div className="flex-container">
             <div className="foodies-card-2">
-              {/* <img
-                src="https://image.freepik.com/free-vector/delicious-mexican-food-cartoon_24640-29381.jpg/20/10"
-                alt="n/a"
-              /> */}
+              <img
+              // src="https://image.freepik.com/free-vector/delicious-mexican-food-cartoon_24640-29381.jpg/20/10"
+              // alt="n/a"
+              />
               <div className="content">
                 <div className="title"></div>
                 <div className="text" />
