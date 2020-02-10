@@ -178,42 +178,47 @@ export default class Home extends Component {
         <div className="horizontal-card-container">
           <div className="foodies-card">
             <img
-              src="https://s3-media0.fl.yelpcdn.com/bphoto/XLwKBKQNJs2i_UeDViY7Rw/l.jpg/300/200"
+              src="https://hoodline.imgix.net/uploads/story/image/358267/Atlanta_Breakfast_Club_Photo_3_Enhanced.jpg?auto=format/300/200"
               alt="n/a"
             />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> "Atlanta Breakfast Club provides it's
-              guest with more than just Great Food and Great Service, but with a
-              Great Experience. Our Breakfast and Lunch menu has been apart of
-              an eating experience shared by guest all over the World."
+              <div className="text">
+                "Atlanta Breakfast Club provides it's guest with more than just
+                Great Food and Great Service, but with a Great Experience. Our
+                Breakfast and Lunch menu has been apart of an eating experience
+                shared by guest all over the World."
+              </div>
             </div>
           </div>
 
           <div className="foodies-card">
             <img
-              src="https://cdn.vox-cdn.com/thumbor/4h1BzezmiL4O2zZMM1kiLiAKmbI=/0x0:1207x901/1200x800/filters:focal(508x355:700x547)/cdn.vox-cdn.com/uploads/chorus_image/image/59544055/The_King_Kong_Sundae_Sugar_Factory_Atlanta_1.0.jpg/300/200"
+              src="https://bloximages.chicago2.vip.townnews.com/pressofatlanticcity.com/content/tncms/assets/v3/editorial/b/ef/bef1d8a7-c22f-51bf-90d2-6a559bc5c302/5bc55ff9416a7.image.jpg?/300/200"
               alt="n/a"
             />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> "Sugar Factory is all about celebrating
-              the sweetest moments in life. We want to create a fun,
-              unforgettable dining experience for any age, at every location"
+              <div className="text">
+                "Sugar Factory is all about celebrating the sweetest moments in
+                life. We want to create a fun, unforgettable dining experience
+                for any age, at every location"
+              </div>
             </div>
           </div>
 
           <div className="foodies-card">
             <img
-              src="https://s3-media0.fl.yelpcdn.com/bphoto/GYXFw8ABUrjejHArcpQbyQ/l.jpg/300/200"
+              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1448390765%2Fmary-macs-tea-room-atlanta-at1115.jpg%3Fitok%3D2iXB_5So&c=sc&poi=face&q=85/300/200"
               alt="n/a"
             />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> "Mary Mac's specializes in one
-              thing.....True Southern Hospitality. From the outstanding service
-              to the wonderful southern cuisine, this is the place to dine in
-              Atlanta."
+              <div className="text">
+                "Mary Mac's specializes in one thing.....True Southern
+                Hospitality. From the outstanding service to the wonderful
+                southern cuisine, this is the place to dine in Atlanta."
+              </div>
             </div>
           </div>
         </div>
@@ -295,44 +300,48 @@ export default class Home extends Component {
         <div className="horizontal-card-container">
           <div className="foodies-card">
             <img
-              src="https://s3-media0.fl.yelpcdn.com/bphoto/UHZYa4OoHLvuqWHdmz_3ZA/l.jpg300/200"
+              src="https://hoodline.imgix.net/uploads/story/image/735466/ramen.jpg?auto=format/300/200"
               alt="n/a"
             />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> " Carrying with it the two award winning
-              pork and lobster ramen, E ramen expand its horizon and created
-              other a full menu of other ramen bowls in the hopes of making this
-              very classical comfort food accessible in the heart of midtown
-              Atlanta. "
+              <div className="text">
+                "With two award winning pork and lobster ramen, E ramen expanded
+                its horizon and created another full menu of other ramen bowls
+                in the hopes of making this very classical comfort food
+                accessible in the heart of midtown Atlanta."
+              </div>
             </div>
           </div>
 
           <div className="foodies-card">
             <img
-              src="https://s3-media0.fl.yelpcdn.com/bphoto/CzVNUGkJQmH7wgRSejsdcQ/l.jpg/300/200"
+              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1448390765%2Fthe-optimist-atlanta-at1115.jpg%3Fitok%3Dt9q6u2aH&c=sc&poi=face&q=85/300/200"
               alt="n/a"
             />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> "Ford Fry’s The Optimist brings a seaside
-              fish camp experience to landlocked Atlantans. From fresh oysters
-              from the Alabama coast and Maine sea scallops to whole roasted
-              Georgia trout, guests enjoy high-quality, sustainable seafood from
-              the country’s best suppliers."
+              <div className="text">
+                "The Optimist brings a seaside fish camp experience to
+                landlocked Atlantans. From fresh oysters from the Alabama coast
+                to Maine sea scallops, guests enjoy high-quality, sustainable
+                seafood from the country’s best suppliers."
+              </div>
             </div>
           </div>
 
           <div className="foodies-card">
             <img
-              src="https://s3-media0.fl.yelpcdn.com/bphoto/sFwVhj6lXUjdctf9JMBX7Q/l.jpg/300/200"
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60/300/200"
               alt="n/a"
             />
             <div className="content">
               <div className="title"></div>
-              <div className="text" /> "Slutty food is overindulgent, gooey,
-              messy, most often sweet, and irresistible. You shouldn't want it,
-              but you do. However, we're plant based...guilt free."
+              <div className="text">
+                "Slutty food is overindulgent, gooey, messy, most often sweet,
+                and irresistible. You shouldn't want it, but you do. However,
+                we're plant based...guilt free."
+              </div>
             </div>
           </div>
           <div
@@ -366,29 +375,28 @@ export default class Home extends Component {
               />
               <div className="content">
                 <div className="title"></div>
-                <div className="text" />
-                Mexican
+                <div className="text">Mexican</div>
               </div>
             </div>{" "}
             <div className="foodies-card-2">
               {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
               <div className="content">
                 <div className="title"></div>
-                <div className="text" /> Italian
+                <div className="text"> Italian</div>
               </div>
             </div>{" "}
             <div className="foodies-card-2">
               {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
               <div className="content">
                 <div className="title"></div>
-                <div className="text" /> Indian
+                <div className="text"> Indian</div>
               </div>
             </div>{" "}
             <div className="foodies-card-2">
               {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
               <div className="content">
                 <div className="title"></div>
-                <div className="text" /> Cajun
+                <div className="text"> Cajun</div>
               </div>
             </div>{" "}
           </div>
@@ -397,14 +405,14 @@ export default class Home extends Component {
               {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
               <div className="content">
                 <div className="title"></div>
-                <div className="text" /> Soul
+                <div className="text"> Soul</div>
               </div>
             </div>{" "}
             <div className="foodies-card-2">
               {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
               <div className="content">
                 <div className="title"></div>
-                <div className="text" /> Thai
+                <div className="text"> Thai</div>
               </div>
             </div>{" "}
             <div className="foodies-card-2">
@@ -418,7 +426,7 @@ export default class Home extends Component {
               {/* <img src="http://placekitten.com/300/200" alt="n/a" /> */}
               <div className="content">
                 <div className="title"></div>
-                <div className="text" /> More Categories
+                <div className="text"> More Categories</div>
               </div>
             </div>
           </div>

@@ -160,14 +160,14 @@ export default class Comments extends Component {
               value={this.state.newComments.review}
               placeholder="Review Id #"
             />
-          </div>
 
-          <input
-            style={{ marginTop: "10px" }}
-            class="btn btn-secondary"
-            type="submit"
-            value="Add Review"
-          />
+            <input
+              style={{ marginTop: "10px" }}
+              class="btn btn-secondary"
+              type="submit"
+              value="Add Review"
+            />
+          </div>
 
           <div className="location-container"></div>
         </form>

@@ -171,14 +171,13 @@ export default class Reviews extends Component {
               value={this.state.newReviews.restaurant}
               placeholder="Restaurant Id #"
             />
+            <input
+              style={{ marginTop: "10px" }}
+              class="btn btn-secondary"
+              type="submit"
+              value="Add Review"
+            />
           </div>
-
-          <input
-            style={{ marginTop: "10px" }}
-            class="btn btn-secondary"
-            type="submit"
-            value="Add Review"
-          />
 
           <div className="location-container"></div>
         </form>

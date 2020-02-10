@@ -174,13 +174,12 @@ export default class SingleRestaurant extends Component {
                 value={this.state.restaurant.need_directions}
                 //   placeholder="Need Directions?"
               />
+              <div style={{ marginTop: "10px" }} className="form-container">
+                <button onClick={this.onSubmit}>Update</button>
+
+                <button onClick={this.deleteSingleRestaurant}>Delete</button>
+              </div>
             </div>
-          </div>
-
-          <div style={{ marginTop: "10px" }} className="form-container">
-            <button onClick={this.onSubmit}>Update</button>
-
-            <button onClick={this.deleteSingleRestaurant}>Delete</button>
           </div>
         </form>
 

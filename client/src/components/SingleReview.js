@@ -160,12 +160,11 @@ export default class SingleReview extends Component {
               value={this.state.review.restaurant}
               //   placeholder="Need Directions?"
             />
-          </div>
+            <div style={{ marginTop: "10px" }} className="form-container">
+              <button onClick={this.onSubmit}>Update</button>
 
-          <div style={{ marginTop: "10px" }} className="form-container">
-            <button onClick={this.onSubmit}>Update</button>
-
-            <button onClick={this.deleteSingleReview}>Delete</button>
+              <button onClick={this.deleteSingleReview}>Delete</button>
+            </div>
           </div>
         </form>
 
